@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "ESKlarheitGrotesk Smbd";
-  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff2");
+  font-family: "subset-Gotham-Medium";
+  src: url("./fonts/subset-Gotham-Medium.woff");
 }
 
 @font-face {
@@ -124,8 +124,8 @@ img {
   border-radius: 50px;
   color: #004b36;
   background-color: #fbfade;
-  font-family: "ESKlarheitGrotesk Smbd";
-  text-transform: uppercase;
+  font-family: "subset-Gotham-Medium";
+  /* text-transform: uppercase; */
   display: flex;
   justify-content: center;
   align-items: center;

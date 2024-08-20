@@ -22,6 +22,7 @@ function animate() {
   tl.set(["#logo"], { autoAlpha: 0 });
 
   tl.addLabel('frame_1', 0)
+    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
     .to('#photo2', 2, { x: 0, ease: "none" }, "frame_1")
     .to(['#h1'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1+=2.5")
     .to(['#h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1+=3")
@@ -29,7 +30,7 @@ function animate() {
   // tl.addLabel('frame_END', '+=4.5')
   tl.addLabel('frame_2', 4)
     .to(['#cta'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
-    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=0.5")
+    .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=0.5")
 
 }
 

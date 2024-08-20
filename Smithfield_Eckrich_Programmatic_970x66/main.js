@@ -19,9 +19,10 @@ function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, rotationZ: 0.1, force3D: true });
   tl.set(["#photo, #photo2"], { rotationZ: 0.1, force3D: true });
   tl.set(["#photo2"], { y: 70 });
-  tl.set(["#logo", '#h1 span', '#h2 span'], { autoAlpha: 0 });
+  tl.set(['#h1 span', '#h2 span'], { autoAlpha: 0 });
 
   tl.addLabel('frame_1', 0)
+    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
     .to('#photo2', 2, { y: 0, ease: "none" }, "frame_1")
     .to(['#h1', '#h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
 
@@ -33,7 +34,7 @@ function animate() {
   // tl.addLabel('frame_END', '+=4.5')
   tl.addLabel('frame_2', 4)
     .to(['#cta'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
-    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=0.5")
+    .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=0.5")
 
 }
 

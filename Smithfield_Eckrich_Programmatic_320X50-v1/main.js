@@ -22,14 +22,11 @@ function animate() {
   tl.set(["#logo"], { autoAlpha: 0 });
 
   tl.addLabel('frame_1', 0)
-    .to('#photo2', 2, { x: 0, ease: "none" }, "frame_1")
-  // .to(['#h1'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1+=2.5")
-  // .to(['#h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1+=3")
-
-  // tl.addLabel('frame_END', '+=4.5')
-  tl.addLabel('frame_2', 3)
     .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
-  // .to(['#cta'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
+    .to('#photo2', 2, { x: 0, ease: "none" }, "frame_1")
+    
+  tl.addLabel('frame_2', 3)
+    .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
 
 }
 
