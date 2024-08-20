@@ -18,7 +18,7 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, rotationZ: 0.1, force3D: true });
   tl.set(["#photo, #photo2"], { rotationZ: 0.1, force3D: true });
-  tl.set(["#photo2"], { x: 300 });
+  tl.set(["#photo2"], { x: 300, autoAlpha:1 });
   tl.set(["#logo"], { autoAlpha: 0 });
 
   tl.addLabel('frame_1', 0)
