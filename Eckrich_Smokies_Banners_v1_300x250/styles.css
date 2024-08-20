@@ -130,6 +130,10 @@ img {
   justify-content: center;
   align-items: center;
 }
+#cta span{
+  display: block;
+  margin-top: 1px;
+}
 
 #default_exit {
   cursor: pointer;
