@@ -18,15 +18,13 @@ function init() {
 function animate() {
   tl.set(["#main_content"], { autoAlpha: 1, rotationZ: 0.1, force3D: true });
   tl.set(["#photo, #photo2"], { rotationZ: 0.1, force3D: true });
-  tl.set(["#photo2"], { x: 160, autoAlpha:1 });
+  tl.set(["#photo2"], { x: 160,  autoAlpha:1 });
 
   tl.addLabel('frame_1', 0)
-    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
-    .to('#photo2', 2, { x: 0, ease: "none" }, "frame_1")
-    
-  tl.addLabel('frame_2', 3)
-    .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
-
+    .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
+    .to('#photo2', .5, { x: 0, ease: "none" }, "frame_1+=.5")
+  tl.addLabel('frame_2', 1.2)
+    .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=.5")
 }
 
 function endTime() {

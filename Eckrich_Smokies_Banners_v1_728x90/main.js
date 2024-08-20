@@ -23,13 +23,13 @@ function animate() {
 
   tl.addLabel('frame_1', 0)
   .to(['#logo'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
-  .to('#photo2', 2, { y: 3, ease: "none" }, "frame_1")
+  .to('#photo2', .5, { y: 3, ease: "none" }, "frame_1")
   .to(['#h1', '#h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_1")
-    .staggerTo(['#h1 span', '#h2 span'], 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.3, 'frame_1+=2')
-    .staggerFrom(['#h1 span', '#h2 span'], 1, { y: '+=50', ease: Power2.easeOut }, 0.3, 'frame_1+=2')
+    .staggerTo(['#h1 span', '#h2 span'], 1, { autoAlpha: 1, y: 0, ease: Power2.easeOut }, 0.3, 'frame_1+=1')
+    .staggerFrom(['#h1 span', '#h2 span'], 1, { y: '+=50', ease: Power2.easeOut }, 0.3, 'frame_1+=1.5')
 
   // tl.addLabel('frame_END', '+=4.5')
-  tl.addLabel('frame_2', 4)
+  tl.addLabel('frame_2', 3)
     .to(['#cta'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2")
     .to(['#logoText'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame_2+=0.5")
 
