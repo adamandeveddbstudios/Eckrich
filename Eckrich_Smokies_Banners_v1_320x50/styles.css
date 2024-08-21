@@ -94,28 +94,34 @@ img {
   line-height: 0.83;
   letter-spacing: -0.4px;
   word-spacing: 2px;
-  left: 168px;
-  top: 11px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 170px;
+  background-color: #004b36;
 }
 
 #h1,
 #h2 {
   width: auto;
   height: auto;
-  left: 0px;
-  /* top: 17px; */
+}
+
+#h1 {
+  left: 31px;
+  top: 11px;
 }
 
 #h2 {
-  color: #024932;
-  bottom: 0;
-  left: 38px;
+  color: #f39a2c;
+  bottom: 1px;
+  left: 69px;
 }
 
 #cta {
-  width: 94px;
+  width: 90px;
   height: 27px;
-  right: 27px;
+  right: 25px;
   bottom: 30px;
   font-size: 11px;
   line-height: 1;

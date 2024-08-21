@@ -8,7 +8,9 @@
   <meta name="ad.size" content="width=970,height=66px" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <title></title>
+  <script type="text/javascript">
+    var clickTag = "https://eckrich.sfdbrands.com/en-us/recipes/";
+  </script>
 </head>
 
 <body>
@@ -37,10 +39,13 @@
     </div>
     <!--end main_container-->
   </div>
-  <script>
-    var clickTag = "https://eckrich.sfdbrands.com/en-us/recipes/";
-  </script>
   <script type="text/javascript" src="main.js"></script>
+  <script>
+    var clickArea = document.getElementById("main_container");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
 </body>
 
 </html>

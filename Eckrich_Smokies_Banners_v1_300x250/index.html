@@ -8,13 +8,14 @@
   <meta name="ad.size" content="width=300,height=250" />
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <title></title>
+  <script type="text/javascript">
+    var clickTag = "https://eckrich.sfdbrands.com/en-us/recipes/";
+  </script>
 </head>
 
 <body>
   <div id="main_container" class="full-width full-height">
     <!--start main_container-->
-    <!-- <img src="images/frame.jpg" style="width: 300px; height: 250px; position: absolute; top: 0px; left: 0px; z-index: 11; opacity: .5;" alt=""> -->
     <div id="main_content" class="full-width full-height pos-abs left-0 top-0">
       
       <img src="./images/product.png" id="photo2" class="full-width full-height pos-abs left-0 top-0 hidden" />
@@ -39,10 +40,13 @@
     </div>
     <!--end main_container-->
   </div>
-  <script>
-    var clickTag = "https://eckrich.sfdbrands.com/en-us/recipes/";
-  </script>
   <script type="text/javascript" src="main.js"></script>
+  <script>
+    var clickArea = document.getElementById("main_container");
+    clickArea.onclick = function () {
+      window.open(clickTag, "_blank");
+    };
+  </script>
 </body>
 
 </html>
