@@ -43,23 +43,16 @@ function endTime() {
 // CTA grow on hover
 
 function setRollover() {
-
-  var clickArea = document.getElementById("default_exit");
-  clickArea.onclick = function () {
-    window.open(clickTag, "_blank");
-  };
-  // clickArea.addEventListener("mouseover", default_over, false);
-  // clickArea.addEventListener("mouseout", default_out, false);
+  document.getElementById('default_exit').addEventListener('mouseover', defaultOver, false);
+  document.getElementById('default_exit').addEventListener('mouseout', defaultOut, false);
 }
 
-// function default_over(event) {
-//   // TweenMax.to(["#cta span"], 0.3, { scale: 1.1, ease: Power1.easeOut, delay: 0, backgroundColor: "#014732", color: "#fff" });
-//   // TweenMax.to(["#cta span svg"], 0.3, { fill: "#fff" }, "<");
-// }
+function defaultOver() {
+  TweenMax.to('#cta', 0.25, { scale: 1.05, ease: Power1.easeInOut })
+}
 
-// function default_out(event) {
-//   // TweenMax.to(["#cta span"], 0.3, { scale: 1, ease: Power1.easeOut, delay: 0, backgroundColor: "inherit", color: "#000" });
-//   // TweenMax.to(["#cta span svg"], 0.3, { fill: "#000" }, "<");
-// }
+function defaultOut() {
+  TweenMax.to('#cta', 0.25, { scale: 1, ease: Power1.easeInOut })
+}
 
 
